@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "type": "Material",
+  "data": {
+    "shader": "1225f09e5cbcf7e68ec5483d7452ebfe",
+    "enableInstancing": true,
+    "properties": {
+      "_Color": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "_ShadowColor": [
+        0.9056604,
+        0.5817778,
+        0.1324315,
+        1
+      ],
+      "_Lighting": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "_Smoothness": 0.5,
+      "_Power": 2,
+      "_MainTex": "white",
+      "_Cutoff": 0,
+      "_Metallic": 0,
+      "_Glossiness": 0.5,
+      "_BumpMap": "bump",
+      "_BumpScale": 1,
+      "_OcclusionMap": "white",
+      "_EmissionColor": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "_EmissionMap": "white"
+    }
+  }
+}

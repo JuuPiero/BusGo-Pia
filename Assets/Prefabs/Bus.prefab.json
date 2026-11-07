@@ -1,0 +1,205 @@
+{
+  "version": 2,
+  "name": "Bus",
+  "objects": [
+    {
+      "id": "6bfqv89wln000a",
+      "name": "Bus",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, -3.571916],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "BoxCollider",
+          "data": {
+            "isTrigger": false,
+            "friction": 0.6,
+            "bounciness": 0,
+            "center": [0, 0.64, 0],
+            "size": [1, 1, 2.36]
+          },
+          "enabled": true
+        },
+        {
+          "type": "Vehicle",
+          "data": {
+            "renderer": {
+              "go": "6brt1wysz60008~model:7f0660dad191f3bb",
+              "type": "MeshRenderer",
+              "index": 0
+            },
+            "mask": {
+              "go": "6bo4oa60gj0007",
+              "type": "SpriteRenderer",
+              "index": 0
+            },
+            "blockedMaskAlpha": 100,
+            "isBlocked": false,
+            "data": {
+              "id": -1,
+              "kind": "",
+              "color": 0,
+              "seats": 0,
+              "pos": [0, 0],
+              "rot_y": 0,
+              "rotates": false,
+              "mystery": false
+            },
+            "kind": "Bus",
+            "isMoving": false,
+            "isParked": false,
+            "leftBoard": false,
+            "posePosition": [0, 0, 0],
+            "poseYaw": 0,
+            "poseRoll": 0,
+            "posePitch": 0,
+            "driftYaw": 0,
+            "squash": 0,
+            "boardPop": 0,
+            "boardPopVelocity": 0,
+            "boardPopKicks": 0,
+            "baseScale": [1, 1, 1]
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6brt1wysz60008~model",
+      "name": "Bus",
+      "parent": "6bfqv89wln000a",
+      "prefab": {
+        "guid": "982a84f2b074b04a486a8455dac163d5",
+        "mods": [
+          {
+            "target": "7f0660dad191f3bb",
+            "path": "MeshRenderer#0.sharedMaterials",
+            "value": [
+              "7df5e9eccb9a16f2dd75186bd3e328e6"
+            ]
+          },
+          {
+            "target": "7f0660dad191f3bb",
+            "path": "MeshRenderer#0.castShadows",
+            "value": false
+          },
+          {
+            "target": "7f0660dad191f3bb",
+            "path": "MeshRenderer#0.receiveShadows",
+            "value": false
+          },
+          {
+            "target": "8914e5524a476bb7",
+            "path": "active",
+            "value": false
+          },
+          {
+            "target": "028906751fd92c36",
+            "path": "active",
+            "value": false
+          },
+          {
+            "target": "028906751fd92c36",
+            "path": "MeshRenderer#0.sharedMaterials",
+            "value": [
+              "builtin:Default-Material"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "6bo4oa60gj0007",
+      "name": "Mask",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6bfqv89wln000a",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 1.219963, 0],
+            "rotation": [90, 0, 0],
+            "scale": [0.68, 0.68, 1]
+          }
+        },
+        {
+          "type": "SpriteRenderer",
+          "data": {
+            "sprite": "2345a3e90b9f1c2cdd069d352165916f#c20692088817",
+            "color": [1, 1, 1, 1],
+            "flipX": false,
+            "flipY": false,
+            "drawMode": "Simple",
+            "size": [1, 1],
+            "sharedMaterials": [],
+            "sortingOrder": 0,
+            "pixelsPerUnit": 100
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6cjiz17i690008",
+      "name": "Cube",
+      "active": false,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6bfqv89wln000a",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "MeshFilter",
+          "data": {
+            "mesh": "Cube"
+          }
+        },
+        {
+          "type": "MeshRenderer",
+          "data": {
+            "sharedMaterials": [
+              "builtin:Default-Material"
+            ],
+            "color": [1, 1, 1, 1],
+            "texture": "",
+            "metallic": 0,
+            "smoothness": 0.5,
+            "emission": [0, 0, 0, 1],
+            "castShadows": true,
+            "receiveShadows": true
+          },
+          "enabled": true
+        },
+        {
+          "type": "BoxCollider",
+          "data": {
+            "isTrigger": false,
+            "friction": 0.6,
+            "bounciness": 0,
+            "center": [0, 0, 0],
+            "size": [1, 1, 1]
+          },
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

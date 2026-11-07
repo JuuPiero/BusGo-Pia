@@ -1,0 +1,1219 @@
+{
+  "version": 2,
+  "name": "Game",
+  "settings": {
+    "pipeline": "3d",
+    "ambientIntensity": 1,
+    "fog": false,
+    "fogColor": [0.5, 0.55, 0.6, 1],
+    "fogNear": 10,
+    "fogFar": 80
+  },
+  "objects": [
+    {
+      "id": "maincam",
+      "name": "Main Camera",
+      "active": true,
+      "tag": "MainCamera",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 18.507309, 7.254744],
+            "rotation": [-60, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "Camera",
+          "data": {
+            "clearFlags": "Solid Color",
+            "backgroundColor": [0.2, 0.2, 0.2, 1],
+            "cullingMask": -1,
+            "projection": "Orthographic",
+            "fieldOfView": 60,
+            "orthographicSize": 12,
+            "nearClipPlane": 0.3,
+            "farClipPlane": 1000,
+            "depth": 0
+          },
+          "enabled": true
+        },
+        {
+          "type": "PhysicsRaycaster",
+          "data": {
+            "eventMask": -1,
+            "maxRayIntersections": 0
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "sun",
+      "name": "Directional Light",
+      "active": false,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 3, 0],
+            "rotation": [-50, -30, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "Light",
+          "data": {
+            "type": "Directional",
+            "color": [1, 0.957, 0.839, 1],
+            "intensity": 1,
+            "range": 10,
+            "spotAngle": 30,
+            "shadows": "Soft Shadows"
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6bzh6qfzox000q",
+      "name": "GameManager",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "GameManager",
+          "data": {
+            "gameConfig": "cee860446cb080a8c8aad5cc27d65088",
+            "colorConfig": "4c2aaf5f533ff34057353b85abc865dc",
+            "levelManager": {
+              "go": "6cfcdjybq00007",
+              "type": "LevelManager",
+              "index": 0
+            },
+            "progress": 0,
+            "total": 0
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6cfcdjybq00007",
+      "name": "LevelManager",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [-2.712757, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "LevelManager",
+          "data": {
+            "levels": [
+              "d04d790fe421db1358f1ca888a97fb88",
+              "f0b10dc803023c9a85d22f02f425c6d0",
+              "4a144bf65f68760eac273d1ddfc8977b",
+              "f24fde38196c938953ad0635c6ea630d"
+            ],
+            "levelIndex": 3,
+            "currentLevel": {
+              "format": "busgo.unity/2",
+              "id": 1,
+              "revision": 2,
+              "name": "Untitled level",
+              "difficulty": "Normal",
+              "bounds_W": [9.3688, 9.3688],
+              "retry_color_shuffle": {
+                "after_retries": 2,
+                "interval": 1
+              },
+              "cars": [
+                {
+                  "id": 1,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 16,
+                  "pos": [-0.1849, 0.1849],
+                  "rot_y": 135,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 2,
+                  "kind": "",
+                  "color": 1,
+                  "seats": 24,
+                  "pos": [1.2353, 1.6147],
+                  "rot_y": 315,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 3,
+                  "kind": "",
+                  "color": 1,
+                  "seats": 24,
+                  "pos": [-1.6147, -1.2353],
+                  "rot_y": 135,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 4,
+                  "kind": "",
+                  "color": 1,
+                  "seats": 16,
+                  "pos": [1.8895, 0.1605],
+                  "rot_y": 45,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 5,
+                  "kind": "",
+                  "color": 2,
+                  "seats": 16,
+                  "pos": [-0.1605, -1.8895],
+                  "rot_y": 45,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 6,
+                  "kind": "",
+                  "color": 2,
+                  "seats": 40,
+                  "pos": [-0.692, 2.5668],
+                  "rot_y": 45,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 7,
+                  "kind": "",
+                  "color": 2,
+                  "seats": 40,
+                  "pos": [-2.5668, 0.692],
+                  "rot_y": 45,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 8,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 40,
+                  "pos": [0.2805, 3.4682],
+                  "rot_y": 225,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 9,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 40,
+                  "pos": [-3.4682, -0.2805],
+                  "rot_y": 225,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 10,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 40,
+                  "pos": [-1.6531, 1.6696],
+                  "rot_y": 225,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 11,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 16,
+                  "pos": [0.9874, -0.9874],
+                  "rot_y": 45,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 12,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 16,
+                  "pos": [2.705, 0.9604],
+                  "rot_y": 225,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 13,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 16,
+                  "pos": [-0.9604, -2.705],
+                  "rot_y": 225,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 14,
+                  "kind": "",
+                  "color": 1,
+                  "seats": 24,
+                  "pos": [2.0747, -2.0747],
+                  "rot_y": 315,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 15,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 24,
+                  "pos": [3.645, -0.498],
+                  "rot_y": 315,
+                  "rotates": false,
+                  "mystery": false
+                },
+                {
+                  "id": 16,
+                  "kind": "",
+                  "color": 0,
+                  "seats": 24,
+                  "pos": [0.498, -3.645],
+                  "rot_y": 135,
+                  "rotates": false,
+                  "mystery": false
+                }
+              ],
+              "gimmicks": [],
+              "passengers": {
+                "loop_model": "main_loop_3",
+                "rotation": "cw",
+                "left": [
+                  {
+                    "color": 0,
+                    "count": 48
+                  },
+                  {
+                    "color": 1,
+                    "count": 32
+                  },
+                  {
+                    "color": 0,
+                    "count": 108
+                  },
+                  {
+                    "color": 1,
+                    "count": 20
+                  }
+                ],
+                "right": [
+                  {
+                    "color": 0,
+                    "count": 48
+                  },
+                  {
+                    "color": 1,
+                    "count": 20
+                  },
+                  {
+                    "color": 0,
+                    "count": 8
+                  },
+                  {
+                    "color": 2,
+                    "count": 16
+                  },
+                  {
+                    "color": 0,
+                    "count": 8
+                  },
+                  {
+                    "color": 2,
+                    "count": 40
+                  },
+                  {
+                    "color": 0,
+                    "count": 12
+                  },
+                  {
+                    "color": 1,
+                    "count": 16
+                  },
+                  {
+                    "color": 2,
+                    "count": 40
+                  }
+                ],
+                "gate": ""
+              },
+              "analysis": {
+                "depth": 4,
+                "stuck": 0,
+                "layer": [
+                  {
+                    "carId": 1,
+                    "layer": 1
+                  },
+                  {
+                    "carId": 2,
+                    "layer": 0
+                  },
+                  {
+                    "carId": 3,
+                    "layer": 0
+                  },
+                  {
+                    "carId": 4,
+                    "layer": 2
+                  },
+                  {
+                    "carId": 5,
+                    "layer": 2
+                  },
+                  {
+                    "carId": 6,
+                    "layer": 3
+                  },
+                  {
+                    "carId": 7,
+                    "layer": 3
+                  },
+                  {
+                    "carId": 8,
+                    "layer": 0
+                  },
+                  {
+                    "carId": 9,
+                    "layer": 0
+                  },
+                  {
+                    "carId": 10,
+                    "layer": 0
+                  },
+                  {
+                    "carId": 11,
+                    "layer": 2
+                  },
+                  {
+                    "carId": 12,
+                    "layer": 1
+                  },
+                  {
+                    "carId": 13,
+                    "layer": 1
+                  },
+                  {
+                    "carId": 14,
+                    "layer": 1
+                  },
+                  {
+                    "carId": 15,
+                    "layer": 0
+                  },
+                  {
+                    "carId": 16,
+                    "layer": 0
+                  }
+                ],
+                "blocked_by": [
+                  {
+                    "carId": 1
+                  },
+                  {
+                    "carId": 4
+                  },
+                  {
+                    "carId": 5
+                  },
+                  {
+                    "carId": 6
+                  },
+                  {
+                    "carId": 7
+                  },
+                  {
+                    "carId": 11
+                  },
+                  {
+                    "carId": 12
+                  },
+                  {
+                    "carId": 13
+                  },
+                  {
+                    "carId": 14
+                  }
+                ],
+                "seats_match_passengers": true
+              }
+            },
+            "vehicleManager": {
+              "go": "6fkgo37rqq002k",
+              "type": "VehicleManager",
+              "index": 0
+            },
+            "parkingManager": {
+              "go": "6fufsnahkt001e",
+              "type": "ParkingManager",
+              "index": 0
+            },
+            "passengerManager": {
+              "go": "6jo2rz42tj00d2",
+              "type": "PassengerManager",
+              "index": 0
+            },
+            "beltManager": {
+              "go": "6gv11ufncz000q",
+              "type": "BeltManager",
+              "index": 0
+            }
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6f0649swij000j",
+      "name": "EventSystem",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "EventSystem",
+          "data": {
+            "firstSelectedGameObject": null,
+            "sendNavigationEvents": true,
+            "pixelDragThreshold": 10
+          },
+          "enabled": true
+        },
+        {
+          "type": "StandaloneInputModule",
+          "data": {
+            "submitButton": "Return",
+            "cancelButton": "Escape"
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6ftq9xsjlj000l",
+      "name": "Root",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0.170155, -0.168866, -2.803985],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        }
+      ]
+    },
+    {
+      "id": "6fkgo37rqq002k",
+      "name": "VehicleManager",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6ftq9xsjlj000l",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 7.058089],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "VehicleManager",
+          "data": {
+            "spawnRoot": null,
+            "yOffset": 0,
+            "motionScaleOverride": 0,
+            "parkingScaleOverride": 0,
+            "unityParkedVehicleWidth": 0.27,
+            "unityBoundsFitWidth": 3.6,
+            "unityBoundsFitDepth": 3.6,
+            "unityBoardMaxScale": 1.3,
+            "footprintWidth": 0.94,
+            "exitSweepWidth": 0.98,
+            "exitSweepLength": 50,
+            "exitOverlapTolerance": 0.0035,
+            "drawExitGizmos": true,
+            "gizmoSweepPreview": 10,
+            "exitOvershoot": 0.3,
+            "parkingLaneOffset": 0.6,
+            "parkingTurnRadius": 0.3,
+            "parkingOverrun": 0.08,
+            "lineCornerRadius": 1.6,
+            "lineCornerRadiusFalloff": 0.6,
+            "lineMinCornerRadius": 0.2,
+            "lineBoardMargin": 0.05,
+            "lineTurnStep": 0.1,
+            "lineMaxCornerDegrees": 150,
+            "lineFinalStraight": 0.1,
+            "lineMaxChecks": 400,
+            "routeClearance": 0.03,
+            "parkedClearance": 0.005,
+            "collisionCheckSpacing": 0.05,
+            "approachSideDeadband": 0.1,
+            "routeSampleSpacing": 0.03,
+            "vehicleSpeedScale": 1.2,
+            "cruiseSpeed": 9,
+            "reverseSpeed": 5,
+            "acceleration": 24,
+            "deceleration": 30,
+            "launchAcceleration": 10,
+            "launchDistance": 0.1,
+            "lateralAcceleration": 110,
+            "gearChangePause": 0.08,
+            "wheelbaseRatio": 0.58,
+            "maxSteerRate": 3600,
+            "steerTransitionDistance": 0.1,
+            "slowdownHoldDistance": 0.45,
+            "peakSmoothingDistance": 0.15,
+            "driveMinSpeed": 0.15,
+            "driveProfileSpacing": 0.02,
+            "driveIntegrationStep": 0.005,
+            "driveSpeed": 7,
+            "cornerLeanPerLateralAcceleration": 0.5,
+            "cornerLeanMaxAngle": 22,
+            "cornerLeanResponse": 0.1,
+            "pitchPerLongitudinalAcceleration": 0.25,
+            "pitchResponse": 0.08,
+            "maxPitch": 3,
+            "driftEnabled": true,
+            "driftLateralThreshold": 18,
+            "driftAnglePerLateralAcceleration": 0.3,
+            "driftMaxAngle": 4,
+            "driftResponse": 0.1,
+            "driftRecovery": 0.3,
+            "windupDistance": 0.1,
+            "windupBackDuration": 0.08,
+            "windupLaunchAcceleration": 40,
+            "windupClearance": 0.02,
+            "windupSquash": 0.03,
+            "windupPitch": 1.5,
+            "arriveBounceAmount": 0.2,
+            "arriveBounceDuration": 0.25,
+            "boardPopAmount": 0.1,
+            "boardPopFrequency": 6,
+            "boardPopDamping": 0.45,
+            "fullPopAmount": 0.18,
+            "fullPopDuration": 0.3,
+            "departDelay": 0.15,
+            "departRise": 0.45,
+            "departRun": 4.5,
+            "departTurnRadius": 0.3,
+            "slotClearDistance": 0.5,
+            "bounceLungeSpeed": 12,
+            "bounceLungeAcceleration": 150,
+            "bounceMaxTravel": 8,
+            "bounceContactGap": 0.02,
+            "bounceMinNudge": 0.08,
+            "bounceMaxCompression": 0.2,
+            "bounceImpactPitch": 7,
+            "bounceImpactSquash": 0.06,
+            "bounceImpactDuration": 0.15,
+            "bounceReboundDistance": 0.1,
+            "bounceReboundDuration": 0.06,
+            "bounceReturnSpeed": 5,
+            "bounceReturnMinDuration": 0.08,
+            "blockerShoveDistance": 0.08,
+            "blockerShoveTilt": 10,
+            "blockerShoveDuration": 0.16,
+            "blockerSwayDuration": 0.9,
+            "blockerSwayFrequency": 2.5,
+            "blockerSwayTilt": 7,
+            "blockerSwayYaw": 3,
+            "trafficBumpEnabled": true,
+            "trafficBumpTolerance": 0.02,
+            "vehicleScale": 0.8
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6fufsnahkt001e",
+      "name": "ParkingManager",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6ftq9xsjlj000l",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, -2.276607],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "ParkingManager",
+          "data": {
+            "spacing": 2,
+            "count": 5,
+            "container": "6istm4o7p900qa",
+            "slotYaw": -20,
+            "drawSlotGizmos": true
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6istm4o7p900qa",
+      "name": "GameObject",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6fufsnahkt001e",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        }
+      ]
+    },
+    {
+      "id": "6jo2rz42tj00d2",
+      "name": "PassengerManager",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6ftq9xsjlj000l",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "PassengerManager",
+          "data": {
+            "leftQueueRoot": "6jolk6732k00d3",
+            "rightQueueRoot": "6jov6pndoi00d4",
+            "maxVisiblePerQueue": 24,
+            "figuresPerRow": 4,
+            "figureSpacing": 0.24,
+            "rowSpacing": 0.3,
+            "leftQueuePath": {
+              "go": "6jpbewnz1o00d6",
+              "type": "SplineContainer",
+              "index": 0
+            },
+            "rightQueuePath": {
+              "go": "6jpcwqa1hj00d7",
+              "type": "SplineContainer",
+              "index": 0
+            },
+            "queueHeadOffset": 0.6,
+            "fitVisibleToPath": true,
+            "queueStepSpeed": 1.8,
+            "unityQueueRowSpacing": 0.1818
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6jolk6732k00d3",
+      "name": "Left",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6jo2rz42tj00d2",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        }
+      ]
+    },
+    {
+      "id": "6jov6pndoi00d4",
+      "name": "Right",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6jo2rz42tj00d2",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        }
+      ]
+    },
+    {
+      "id": "6gv11ufncz000q",
+      "name": "BeltManager",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6ftq9xsjlj000l",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "BeltManager",
+          "data": {
+            "beltPath": {
+              "go": "6jhquar8fq00cm",
+              "type": "SplineContainer",
+              "index": 0
+            },
+            "speed": 1,
+            "endSpeed": 3,
+            "capacityOverride": 0,
+            "figureSpacingOverride": 0.5,
+            "unityBeltLength": 10.2282,
+            "crowdScaleOverride": 0,
+            "exitGate": {
+              "go": "6k1lk09y7a00nt",
+              "type": "ExitGate",
+              "index": 0
+            },
+            "exitGateCenter": 0.898,
+            "exitGateLength": 0.078,
+            "leftJoinT": 0.045,
+            "rightJoinT": 0.75,
+            "feedInterval": 0.05,
+            "queueWalkSpeed": 1.6,
+            "beltJoinMinDuration": 0.12,
+            "beltJoinReachRows": 0.6,
+            "ruleLeftJoin": 0.296,
+            "ruleRightJoin": 0.7,
+            "streamRunSpeed": 3,
+            "streamExitInterval": 0.05,
+            "streamEntryShrinkDistance": 0.15,
+            "streamLaneCount": 2,
+            "streamLaneSpacing": 0.03,
+            "streamMouthHalfWidth": 0.65,
+            "countFadeInDuration": 0.25,
+            "boardingMouthOffsetX": 0.12,
+            "boardingMouthOffsetZ": -0.25,
+            "boardingLaneOffsetZ": 0.4,
+            "boardingPointClearance": 0.045
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6jhquar8fq00cm",
+      "name": "MainPath",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6gv11ufncz000q",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "SplineContainer",
+          "data": {
+            "splines": [
+              {
+                "knots": [
+                  {
+                    "position": [-3.248298, 0.00002, -7.59689],
+                    "tangentIn": [-0.039535, -0.00001, 0.526169],
+                    "tangentOut": [0.039535, 0.00001, -0.526169],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [-2.487816, 0.000066, -8.990146],
+                    "tangentIn": [-0.466344, -0.000009, 0.330186],
+                    "tangentOut": [0.466344, 0.000009, -0.330186],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [-0.467657, 0.000069, -9.40281],
+                    "tangentIn": [-0.840642, 0.000002, 0.012825],
+                    "tangentOut": [0.840642, -0.000002, -0.012825],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [2.355326, 0.000055, -8.971424],
+                    "tangentIn": [-0.490282, 0.00001, -0.304858],
+                    "tangentOut": [0.490282, -0.00001, 0.304858],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [3.131799, 0.000009, -7.596812],
+                    "tangentIn": [-0.054368, 0.000009, -0.583308],
+                    "tangentOut": [0.054368, -0.000009, 0.583308],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [2.535505, 0.000008, -5.584656],
+                    "tangentIn": [0.51516, 0.000001, -0.43788],
+                    "tangentOut": [-0.51516, -0.000001, 0.43788],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [0.019802, 0, -5.160913],
+                    "tangentIn": [0.866552, 0.000001, 0.01073],
+                    "tangentOut": [-0.866552, -0.000001, -0.01073],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [-2.620368, 0.000004, -5.664601],
+                    "tangentIn": [0.491694, -0.000003, 0.409965],
+                    "tangentOut": [-0.491694, 0.000003, -0.409965],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  }
+                ],
+                "closed": true
+              }
+            ]
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6jpbewnz1o00d6",
+      "name": "Left",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6gv11ufncz000q",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "SplineContainer",
+          "data": {
+            "splines": [
+              {
+                "knots": [
+                  {
+                    "position": [-7.033021, 0, -18.373055],
+                    "tangentIn": [-0.090114, 0.415379, -2.017822],
+                    "tangentOut": [0.089774, -0.413811, 2.010204],
+                    "rotation": [0, 0, 0],
+                    "mode": "Continuous",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [-5.815933, 0, -10.773245],
+                    "tangentIn": [-0.538538, 0, -1.238756],
+                    "tangentOut": [0.538538, 0, 1.238756],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [-3.671542, 0, -8.480673],
+                    "tangentIn": [-0.90054, 0.012131, -0.534413],
+                    "tangentOut": [0.994975, -0.013403, 0.590454],
+                    "rotation": [0, 0, 0],
+                    "mode": "Continuous",
+                    "tension": 0.333333
+                  }
+                ],
+                "closed": false
+              }
+            ]
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6jpcwqa1hj00d7",
+      "name": "Right",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6gv11ufncz000q",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "SplineContainer",
+          "data": {
+            "splines": [
+              {
+                "knots": [
+                  {
+                    "position": [6.638878, 0.192811, -18.092004],
+                    "tangentIn": [-0.058329, 0.441197, -2.203204],
+                    "tangentOut": [0.061728, -0.466908, 2.331596],
+                    "rotation": [0, 0, 0],
+                    "mode": "Continuous",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [5.447801, 0, -10.392925],
+                    "tangentIn": [0.493125, 0.019178, -1.174655],
+                    "tangentOut": [-0.493125, -0.019178, 1.174655],
+                    "rotation": [0, 0, 0],
+                    "mode": "Auto",
+                    "tension": 0.333333
+                  },
+                  {
+                    "position": [3.519683, 0, -8.288699],
+                    "tangentIn": [0.836056, -0.0158, -0.454874],
+                    "tangentOut": [-0.758505, 0.014334, 0.41268],
+                    "rotation": [0, 0, 0],
+                    "mode": "Continuous",
+                    "tension": 0.333333
+                  }
+                ],
+                "closed": false
+              }
+            ]
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6k1lk09y7a00nt",
+      "name": "Exit",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6gv11ufncz000q",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0.483605, -5.446026],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "ExitGate",
+          "data": {
+            "size": [2, 1, 1]
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6ir1ifhg9i00q9",
+      "name": "AUDIO",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "AudioManager",
+          "data": {
+            "audioPrefab": null,
+            "audios": [
+              "2cfe89532d8314c1a50dad80d2a424c4"
+            ],
+            "poolSize": 10,
+            "masterVolume": 1,
+            "musicVolume": 1,
+            "sfxVolume": 1
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6ixtxfdj2q00rd",
+      "name": "PACING",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [9, 9, 9],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        }
+      ]
+    },
+    {
+      "id": "6jfq38eb7q00bt",
+      "name": "bangchuyen_test",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, -14.188275],
+            "rotation": [-90, 0, 0],
+            "scale": [1.2, 1.2, 1]
+          }
+        },
+        {
+          "type": "SpriteRenderer",
+          "data": {
+            "sprite": "3c9cbe0b8e8836648e65f4e03ceef61e",
+            "color": [1, 1, 1, 1],
+            "flipX": false,
+            "flipY": false,
+            "drawMode": "Simple",
+            "size": [1, 1],
+            "sharedMaterials": [
+              "builtin:Sprites-Default"
+            ],
+            "sortingOrder": 0,
+            "pixelsPerUnit": 100
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6kchqqamzc06zd",
+      "name": "PACING",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "PacingConfig",
+          "data": {
+            "baseFactor": 1,
+            "openingFactor": 3,
+            "boardClearedFactor": 2.5,
+            "openingCrowdFactor": 1,
+            "crowdMaxFactor": 1.5,
+            "openingBeltFactor": 3,
+            "factorResponseSeconds": 0.12,
+            "beltFactorResponseSeconds": 0.6
+          },
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

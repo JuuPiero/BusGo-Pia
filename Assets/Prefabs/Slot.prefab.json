@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "name": "Slot",
+  "objects": [
+    {
+      "id": "6fzv0ut787003s",
+      "name": "Slot",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [-0.170155, 0, 2.803985],
+            "rotation": [-90, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "SpriteRenderer",
+          "data": {
+            "sprite": "2345a3e90b9f1c2cdd069d352165916f#279c945f3244",
+            "color": [1, 1, 1, 1],
+            "flipX": false,
+            "flipY": false,
+            "drawMode": "Simple",
+            "size": [1, 1],
+            "sharedMaterials": [
+              "builtin:Sprites-Default"
+            ],
+            "sortingOrder": 0,
+            "pixelsPerUnit": 100
+          },
+          "enabled": true
+        },
+        {
+          "type": "Slot",
+          "data": {
+            "countLabel": {
+              "go": "6k3zkrro4a00og",
+              "type": "TextRenderer",
+              "index": 0
+            }
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6k3zkrro4a00og",
+      "name": "Text",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": "6fzv0ut787003s",
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, 1.652254],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "TextRenderer",
+          "data": {
+            "text": "40",
+            "font": "",
+            "fontSize": 48,
+            "fontStyle": "Bold",
+            "alignment": "Center",
+            "color": [1, 1, 1, 1],
+            "outlineWidth": 2,
+            "outlineColor": [0, 0, 0, 1],
+            "sortingOrder": 0,
+            "billboard": false
+          },
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

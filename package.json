@@ -1,0 +1,10 @@
+{
+  "name": "busgo",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "com.pia.playable": "file:../../PiaEngine/pia-packages/com.pia.playable",
+    "com.pia.spine": "file:../../PiaEngine/pia-packages/com.pia.spine",
+    "com.pia.spline": "file:../../PiaEngine/pia-packages/com.pia.spline"
+  }
+}

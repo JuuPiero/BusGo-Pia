@@ -1,0 +1,21 @@
+{
+  "name": "BusGo",
+  "dimension": "3d",
+  "version": "0.1.0",
+  "scenes": [
+    "Assets/Scenes/Game.scene.json"
+  ],
+  "build": {
+    "target": "playable",
+    "targets": {
+      "playable": {
+        "channels": [
+          "AppLovin"
+        ]
+      }
+    }
+  },
+  "physics": {
+    "backend3d": "builtin"
+  }
+}

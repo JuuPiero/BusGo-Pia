@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "name": "Passenger",
+  "objects": [
+    {
+      "id": "6k6yj16ksa00u3",
+      "name": "Passenger",
+      "active": true,
+      "tag": "Untagged",
+      "layer": 0,
+      "parent": null,
+      "components": [
+        {
+          "type": "Transform",
+          "data": {
+            "position": [0, 0, -2.223576],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+          }
+        },
+        {
+          "type": "Passenger",
+          "data": {
+            "renderer": {
+              "go": "6k77f95a8h00u4:af666b66fbdf95b9",
+              "type": "SkinnedMeshRenderer",
+              "index": 0
+            },
+            "colorIndex": 0
+          },
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6k77f95a8h00u4",
+      "name": "Boy",
+      "parent": "6k6yj16ksa00u3",
+      "prefab": {
+        "guid": "883eeae5d1b9222d535e7cfbaaa30299",
+        "mods": [
+          {
+            "target": "root",
+            "path": "Transform#0.rotation",
+            "value": [0, -90, 0]
+          },
+          {
+            "target": "root",
+            "path": "Transform#0.scale",
+            "value": [0.7, 0.7, 0.7]
+          },
+          {
+            "target": "af666b66fbdf95b9",
+            "path": "SkinnedMeshRenderer#0.sharedMaterials",
+            "value": [
+              "17369269f8401e2a1f4d2eb0be1a9eef"
+            ]
+          },
+          {
+            "target": "af666b66fbdf95b9",
+            "path": "SkinnedMeshRenderer#0.castShadows",
+            "value": false
+          },
+          {
+            "target": "af666b66fbdf95b9",
+            "path": "SkinnedMeshRenderer#0.receiveShadows",
+            "value": false
+          },
+          {
+            "target": "ee1025558bf35c3a",
+            "path": "active",
+            "value": false
+          }
+        ]
+      }
+    }
+  ]
+}

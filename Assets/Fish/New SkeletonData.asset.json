@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "type": "SkeletonDataAsset",
+  "data": {
+    "skeletonJSON": "878de14b5842e5a592ba83f552868db6",
+    "atlasAsset": "edcec4d8ff70a942d9d3bdc831014df2",
+    "scale": 0.01,
+    "defaultMix": 0.2,
+    "mixes": []
+  }
+}

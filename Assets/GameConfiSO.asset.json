@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "type": "GameConfiSO",
+  "data": {
+    "busPrefab": "244045fbea5984358abc4f0b63ef1891",
+    "carPrefab": "a48a809166a629e85a6509b599572198",
+    "vanPrefab": "50b67dd61936ded61ee54fa40cf8e414",
+    "slotPrefab": "3c927cc58fdbd9d9dfc785e9746346f6",
+    "passengerPrefab": "00449dab21133fb3c287dd334e9459d8"
+  }
+}

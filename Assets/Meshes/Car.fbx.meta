@@ -1,0 +1,26 @@
+{
+  "guid": "d0d1a5ebb39a5164e9cf0ea2146f7c91",
+  "importer": {
+    "scaleFactor": 1,
+    "importAnimation": true,
+    "convertUnits": true,
+    "importBlendShapes": true,
+    "importCameras": true,
+    "importLights": true,
+    "preserveHierarchy": false,
+    "sortHierarchyByName": true,
+    "normals": "Import",
+    "smoothingAngle": 60,
+    "animationType": "Generic",
+    "optimizeGameObjects": true,
+    "extraExposedTransforms": [],
+    "materialImportMode": "Import",
+    "materialLocation": "Embedded",
+    "remappedMaterials": {},
+    "meshCompression": "Medium",
+    "animationCompression": "Off",
+    "animRotationError": 0.5,
+    "animPositionError": 0.5,
+    "animScaleError": 0.5
+  }
+}

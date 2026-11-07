@@ -1,0 +1,77 @@
+{
+  "guid": "2345a3e90b9f1c2cdd069d352165916f",
+  "importer": {
+    "filterMode": "Bilinear",
+    "pixelsPerUnit": 100,
+    "wrapMode": "Clamp",
+    "spriteMode": "Multiple",
+    "sprites": [
+      {
+        "id": "2bf87e37f0b7",
+        "name": "Mark_0",
+        "x": 4,
+        "y": 23,
+        "width": 119,
+        "height": 209
+      },
+      {
+        "id": "c20692088817",
+        "name": "Mark_1",
+        "x": 132,
+        "y": 23,
+        "width": 123,
+        "height": 207
+      },
+      {
+        "id": "279c945f3244",
+        "name": "Mark_2",
+        "x": 255,
+        "y": 0,
+        "width": 230,
+        "height": 256
+      },
+      {
+        "id": "90b683a5031c",
+        "name": "Mark_3",
+        "x": 718,
+        "y": 1,
+        "width": 222,
+        "height": 252
+      },
+      {
+        "id": "c5e290d0a6e8",
+        "name": "Mark_4",
+        "x": 948,
+        "y": 0,
+        "width": 196,
+        "height": 256
+      },
+      {
+        "id": "35184accc4f6",
+        "name": "Mark_5",
+        "x": 1160,
+        "y": 12,
+        "width": 110,
+        "height": 231
+      },
+      {
+        "id": "47f70f0deeca",
+        "name": "Mark_6",
+        "x": 1280,
+        "y": 17,
+        "width": 110,
+        "height": 222
+      }
+    ],
+    "spritePivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "spriteBorder": {
+      "left": 0,
+      "bottom": 0,
+      "right": 0,
+      "top": 0
+    }
+  }
+}
